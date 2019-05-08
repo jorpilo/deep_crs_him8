@@ -1,0 +1,61 @@
+import numpy as np
+import cv2
+
+# Set the Corner detection parameters
+cornerParams= decit(maxCorners=100,
+                    qualityLevel=0.3,
+                    minDistance=7,
+                    blockSize=7 )
+
+
+# Set the Lucas Kanade Optical Flow Parameters
+lkParams=dict( winSize =(15,15),
+              maxLevel=2,
+              criteria = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03))
+
+# The Video Needs to be captured
+videoCapture = cv2.VideoCapture('clouds.mp4')
+
+# First Frame
+success, frame = videoCapture.read()
+gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+cv2.imshow('frame',gray)
+p0 = cv2.goodFeaturesToTrack(gray, mask = None, **cornerParams)
+
+ # Create a mask image for drawing purposes
+mask = np.zeros_like(frame)
+
+# Random Colours
+colour=np.random.randint(0,255,(100,3))
+
+while(1):
+    success,frame = videoCapture.read()
+    frameGray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+ 
+     # calculate optical flow
+    p1, st, err = cv2.calcOpticalFlowPyrLK(gray, frameGray, p0, None, **lkParams)
+ 
+     # Select good points
+    goodPointNew = p1[st==1]
+    goodPointOld = p0[st==1]
+     # draw the tracks
+    for i,(new,old) in enumerate(zip(goodPointNew,goodPointOld)):
+         a,b = new.ravel()
+         c,d = old.ravel()
+         mask = cv2.line(mask, (a,b),(c,d), colour[i].tolist(), 2)
+         frame = cv2.circle(frame,(a,b),5,colour[i].tolist(),-1)
+    img = cv2.add(frame,mask)
+ 
+    cv2.imshow('frame',img)
+    k = cv2.waitKey(30) & 0xff
+    if k == 27:
+         break
+
+ # Now update the previous frame and previous points
+    gray = frameGray.copy()
+    p0 = goodPointNew.reshape(-1,1,2)
+
+
+
+videoCapture.release()
+cv2.destroyAllWindows()
