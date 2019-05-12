@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 # Set the Corner detection parameters
-cornerParams= decit(maxCorners=100,
+cornerParams= dict(maxCorners=100,
                     qualityLevel=0.3,
                     minDistance=7,
                     blockSize=7 )
