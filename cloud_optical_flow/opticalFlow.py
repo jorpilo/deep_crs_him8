@@ -23,22 +23,24 @@ def main():
 
     dataset = np.round(255*(a - np.min(a))/np.ptp(a).astype(int)).astype(np.uint8)
 
-    gray = dataset[0,:,:]
+    gray = base = dataset[0,:,:]
     #%%
     cv2.imshow('frame',gray)
     cv2.waitKey()
     # First Frame
 
+    p0 = cv2.goodFeaturesToTrack(gray, mask = None, **cornerParams, useHarrisDetector=True)
 
-    p0 = cv2.goodFeaturesToTrack(gray, mask = None, **cornerParams)
+    numberpoints = len(p0)
 
     # Create a mask image for drawing purposes
     mask = np.zeros_like(gray)
 
     # Random Colours
-    colour=np.random.randint(0,255,(100,3))
-
+    colour=np.random.randint(0,255,(1000,1
+                                    ))
     for i in range(1, len(dataset)):
+
         frameGray = dataset[i,:,:]
 
          # calculate optical flow
@@ -47,13 +49,14 @@ def main():
          # Select good points
         goodPointNew = p1[st==1]
         goodPointOld = p0[st==1]
-         # draw the tracks
+
+        # draw the tracks
         for i,(new,old) in enumerate(zip(goodPointNew,goodPointOld)):
              a,b = new.ravel()
              c,d = old.ravel()
              mask = cv2.line(mask, (a,b),(c,d), colour[i].tolist(), 2)
              frame = cv2.circle(gray,(a,b),5,colour[i].tolist(),-1)
-        img = cv2.add(gray,mask)
+        img = cv2.add(frame,mask)
 
         cv2.imshow('frame',img)
         cv2.waitKey()
@@ -61,6 +64,12 @@ def main():
      # Now update the previous frame and previous points
         gray = frameGray
         p0 = goodPointNew.reshape(-1,1,2)
+
+        if (i % 3 == 0):
+            newpoints = cv2.goodFeaturesToTrack(frameGray, mask = None, **cornerParams, useHarrisDetector=True)
+            p0 = np.concatenate((p0, newpoints))
+            mask = np.zeros_like(gray)
+
 
     cv2.destroyAllWindows()
 
