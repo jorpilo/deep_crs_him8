@@ -65,10 +65,8 @@ def main():
         gray = frameGray
         p0 = goodPointNew.reshape(-1,1,2)
 
-        if (i % 3 == 0):
-            newpoints = cv2.goodFeaturesToTrack(frameGray, mask = None, **cornerParams, useHarrisDetector=True)
-            p0 = np.concatenate((p0, newpoints))
-            mask = np.zeros_like(gray)
+        newpoints = cv2.goodFeaturesToTrack(frameGray, mask = None, **cornerParams, useHarrisDetector=True)
+        mindistance(newpoints, p0)
 
 
     cv2.destroyAllWindows()
