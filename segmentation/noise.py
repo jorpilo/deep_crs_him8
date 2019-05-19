@@ -33,7 +33,7 @@ b7 = b7 / maxb
 b7 = b7*255
 b7 = b7.astype(np.uint8)
 # implement fastmeansdenoising 
-dst = cv2.fastNlMeansDenoising(b7,None,9,13)
+dst = cv2.fastNlMeansDenoising(b7,None,2,7)
 
 # implememt erosion on denoised image
 kernel = np.ones((3,4),np.uint8)
