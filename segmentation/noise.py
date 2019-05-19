@@ -33,6 +33,9 @@ b7 = b7 / maxb
 b7 = b7*255
 b7 = b7.astype(np.uint8)
 # implement fastmeansdenoising 
+# source: http://www.ipol.im/pub/art/2011/bcm_nlm/?fbclid=IwAR14yFSlRbYeSHAne1_yOpFCF2pGW-K3UgFLywC1haRSe8Sm3SlBwGEkHeQ for how non-level means denoising works
+# source: https://docs.opencv.org/3.2.0/d1/d79/group__photo__denoise.html?fbclid=IwAR0QsxpxkWE88DwABMkGdMMwaUL5NWubdKeF4fe6H1mN2D-bCpd8kxAEIv4#ga76abf348c234cecd0faf3c42ef3dc715
+# for how cv2.fastNLMeansDenoising works in python 
 dst = cv2.fastNlMeansDenoising(b7,None,2,7)
 
 # implememt erosion on denoised image
