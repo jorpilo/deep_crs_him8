@@ -1,0 +1,72 @@
+===Images===
+-Description:
+Set of images completly unrelated to each other.
+Images are in order in all the files B7[0] == B8[0]...
+
+-FileFormat:
+12 Numpy npy files
+1163 images, 400x400 pixels, float32
+
+-Files:
+B7-B16: Himawari_8 bands
+crsflux: Real observed precicipation
+gpm: Generated precicipiation old formulae
+
+-Url:
+https://cloudstor.aarnet.edu.au/plus/s/QveMExqHt46cLH4
+
+-Size:
+710M each npy file.
+zip: 5.7G
+
+===Video1===
+-Description:
+Video of clouds taken every 10 minutes.
+Layers: B7, B9, B11, B16
+No result.
+
+-FileFormat:
+973 frames (each 10 minutes), 400x700 pixels, float32
+
+-Files:
+sortH8_Flow.nc
+
+-Size:
+total: 2.9G
+zip: 2.9G
+
+-Url:
+https://cloudstor.aarnet.edu.au/plus/s/EP7mePfzqZuwBpB
+
+===Video2===
+-Description:
+Video of clouds taken every hour of all 2017
+Layers: B7, B9, B11, B16
+Careful! every video contains different frames.
+Need to filter frames with scripts:
+https://github.com/prl900/generative_precipitation/blob/master/data_loader.py#L18
+
+Follow example in:
+https://github.com/prl900/generative_precipitation/blob/master/data_loader.py
+
+-FileFormat:
+frames each 1 hour, 256x256 pixels, float32
+GPM: 8759 frames
+TP: 8748 frames
+sortH8: 8480 frames
+
+-Files:
+GPM: Generated precicipiation old formulae
+TP: Observed Precipitation
+sortH8: Himawari_8 layers
+
+-Url:
+https://cloudstor.aarnet.edu.au/plus/s/1b8taeAqqWwr768
+
+-Size:
+GPM: 2.2G
+TP: 2.2G
+H8: 6.4G
+zip: 6.7G
+
+
