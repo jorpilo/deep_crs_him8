@@ -12,6 +12,9 @@ import os
 import cv2
 from sklearn.cluster import MeanShift, estimate_bandwidth
 import matplotlib.pyplot as plt
+
+# MeanShift function 
+# source link: http://efavdb.com/mean-shift/
 def MeanShift_one(b7):
 
     shape = b7.shape
@@ -25,9 +28,11 @@ def MeanShift_one(b7):
 
     return segmented_image
 
+# kmeans function 
+# source link: https://dzone.com/articles/cluster-image-with-k-means
 def Kmeans_one(b7):
     shape = b7.shape
-    clusters = 3
+    clusters = 3 # modify the cluster number here 
     b7 = b7.astype(np.float32)
 
     flat_image = b7.reshape(-1, 1)
