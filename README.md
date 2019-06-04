@@ -4,7 +4,8 @@ requirements:
 
 Dataset:
     Datasets explained in file dataset.txt
-    
+    URL: https://cloudstor.aarnet.edu.au/plus/s/Dau9GY3Y3IqobXQ
+    Size: 43.5G
 
 code: 
 For usage please run any code as python example.py -h
