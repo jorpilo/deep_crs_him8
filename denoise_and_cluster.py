@@ -10,6 +10,9 @@ from matplotlib import pyplot as plt
 from sklearn.cluster import MeanShift, estimate_bandwidth
 from sklearn import cluster
 from scipy import ndimage
+import xarray as xr
+import argparse
+from multiprocessing import Pool
 
 # read in one random image
 b7 = np.load("D:/dataset/b9_30.npy")[100]
@@ -82,6 +85,72 @@ def Meanshift(img):
       
     return segmented_image 
 
+def denoise_many(input_filename):
+    out_filename = "../dataset/sat_pre_images/denoised.nc"
+    ds = xr.open_dataset(input_filename)
+    datasets = ["B7","B9"]
+    dx = xr.Dataset({})
+    for number in datasets:
+        a = np.asarray(ds[number])
+        dataset = np.round(255*(a - np.min(a))/np.ptp(a).astype(int)).astype(np.uint8)
+        print("Starting threads")
+        with Pool(8) as p:
+            result = p.map(denoise, dataset)
+        print("Processes done for " + number)        
+        result = np.array(result, dtype='uint8')
+        dx[number] = xr.DataArray(result, dims=['time','width', 'height'])
+        
+    comp = dict(zlib=True, complevel=9)
+    encoding = {var: comp for var in ds.data_vars}
+    dx.to_netcdf(out_filename, mode='w', format='NETCDF4', engine='h5netcdf', encoding=encoding)
+    
+    
+def sharpen_many(input_filename):
+    out_filename = "../dataset/sat_pre_images/sharpened.nc"
+    ds = xr.open_dataset(input_filename)
+    datasets = ["B7","B9"]
+    dx = xr.Dataset({})
+    for number in datasets:
+        a = np.asarray(ds[number])
+        dataset = np.round(255*(a - np.min(a))/np.ptp(a).astype(int)).astype(np.uint8)
+        print("Starting threads")
+        with Pool(8) as p:
+            result = p.map(sharpen, dataset)
+        print("Processes done for " + number)        
+        result = np.array(result, dtype='uint8')
+        dx[number] = xr.DataArray(result, dims=['time','width', 'height'])
+        
+    comp = dict(zlib=True, complevel=9)
+    encoding = {var: comp for var in ds.data_vars}
+    dx.to_netcdf(out_filename, mode='w', format='NETCDF4', engine='h5netcdf', encoding=encoding)
+
+## Main
+if __name__ == "__main__":
+    # Arguments:
+    parser = argparse.ArgumentParser(description='Implement denoising on a dataset')
+    parser.add_argument('filename',
+                        help='Name to the dataset to implenment denoising on', type=str, metavar="filename")
+    args = parser.parse_args()
+
+    # Load dataset
+    dataset = xr.open_dataset(args.filename)
+
+    # Perform denoise
+    denoise_many(dataset)
+    
+    # Arguments:
+    parser = argparse.ArgumentParser(description='Implement sharpening on a dataset')
+    parser.add_argument('filename',
+                        help='Name to the dataset to implenment sharpening on', type=str, metavar="filename")
+    args = parser.parse_args()
+
+    # Load dataset
+    dataset = xr.open_dataset(args.filename)
+
+    # Perform sharpening
+    sharpen_many(dataset)
+
+'''
 #display all the results for comparison     
 denoised = denoise(b7)
 erosion = erosion(denoised)
@@ -98,3 +167,4 @@ kmean = Kmeans(b7)
 plt.figure(figsize = (28,15))
 plt.subplot(231),plt.imshow(meanshift),plt.title("Mean shift")
 plt.subplot(232),plt.imshow(kmean),plt.title("Kmeans with 5 clusters")
+'''
