@@ -101,7 +101,7 @@ def denoise_many(input_filename):
         dx[number] = xr.DataArray(result, dims=['time','width', 'height'])
         
     comp = dict(zlib=True, complevel=9)
-    encoding = {var: comp for var in ds.data_vars}
+    encoding = {var: comp for var in dx.data_vars}
     dx.to_netcdf(out_filename, mode='w', format='NETCDF4', engine='h5netcdf', encoding=encoding)
     
     
@@ -121,7 +121,7 @@ def sharpen_many(input_filename):
         dx[number] = xr.DataArray(result, dims=['time','width', 'height'])
         
     comp = dict(zlib=True, complevel=9)
-    encoding = {var: comp for var in ds.data_vars}
+    encoding = {var: comp for var in dx.data_vars}
     dx.to_netcdf(out_filename, mode='w', format='NETCDF4', engine='h5netcdf', encoding=encoding)
 
 ## Main
