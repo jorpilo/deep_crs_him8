@@ -1,17 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="619d3a3c-e4a6-4ed9-9c0b-3eb5616aa87c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Network/OFPN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network/STPN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network/losses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network/opticalflow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network/others/STPN2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network/others/STPN3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network/others/STPN4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_creations.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_creations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video_creation.py" beforeDir="false" afterPath="$PROJECT_DIR$/video_creation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud_optical_flow/video_creation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clustering.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/model2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_1_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_2_1_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_2_3_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_2_5_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_3_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_4_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_5_2_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_5_3_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/obs_rain_5_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/others/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/others/model3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/others/model4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/others/model5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_1_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_2_1_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_2_3_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_2_5_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_3_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_4_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_5_2_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_5_3_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/pred_rain_5_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/results.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn- model2/utils/IO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kmeans_transform_files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optical_flow_all_pixels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rain_prediction.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/image_creations.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#1#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/video_creation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding>
+                <element signature="e#1#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/video_creation.py" />
+        <option value="$PROJECT_DIR$/image_creations.py" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-4" />
     <option name="width" value="1928" />
     <option name="height" value="1048" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Others" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Others" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="619d3a3c-e4a6-4ed9-9c0b-3eb5616aa87c" name="Default Changelist" comment="" />
+      <created>1559657995464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559657995464</updated>
+      <workItem from="1559658001158" duration="527000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="527000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/video_creation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_creations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
