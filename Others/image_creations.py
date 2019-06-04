@@ -1,5 +1,10 @@
+"""
+    image_creation.py
+
+    Save the images of a layer of a dataset into a foder
+"""
+
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
 import xarray as xr
 import argparse
 

@@ -1,3 +1,8 @@
+"""
+    video_creation.py
+
+    Creates a video of a layer of a dataset
+"""
 
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation

@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="619d3a3c-e4a6-4ed9-9c0b-3eb5616aa87c" name="Default Changelist" comment="">
+    <list default="true" id="7fcd8359-f6bc-46b9-baea-4082b0105055" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/.idea/3- Frame Prediction Network.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/Denoising_OF/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/Denoising_OF/denoising.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/Denoising_OF/opticalflow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/STPN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/losses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2- Frame Prediction/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/.idea/3- Precipitation Prediction.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/Clustering/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/Clustering/clustering.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/Sharpening/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/Sharpening/sharpening.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/rainpred.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3- Precipitation Prediction/utils/IO.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Network/OFPN.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Network/STPN.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Network/__init__.py" beforeDir="false" />
@@ -11,6 +37,8 @@
       <change beforePath="$PROJECT_DIR$/../Network/others/STPN3.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Network/others/STPN4.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Network/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Others/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cloud_optical_flow/video_creation.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../clustering.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cnn- model2/model2.py" beforeDir="false" />
@@ -57,25 +85,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/image_creations.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Denoising_OF/denoising.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
-                <element signature="e#1#32#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/video_creation.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Denoising_OF/opticalflow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-              <folding>
-                <element signature="e#1#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -88,14 +113,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/video_creation.py" />
-        <option value="$PROJECT_DIR$/image_creations.py" />
+        <option value="$PROJECT_DIR$/Denoising_OF/opticalflow.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-255" />
-    <option name="y" value="264" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="329" />
     <option name="width" value="1272" />
     <option name="height" value="692" />
   </component>
@@ -110,8 +133,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="Others" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Others" type="462c0819:PsiDirectoryNode" />
+              <item name="2-Frame Prediction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2-Frame Prediction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2-Frame Prediction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2-Frame Prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="Denoising_OF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -120,7 +148,6 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -140,24 +167,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="619d3a3c-e4a6-4ed9-9c0b-3eb5616aa87c" name="Default Changelist" comment="" />
-      <created>1559657995464</created>
+      <changelist id="7fcd8359-f6bc-46b9-baea-4082b0105055" name="Default Changelist" comment="" />
+      <created>1559659303245</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1559657995464</updated>
-      <workItem from="1559658001158" duration="679000" />
+      <updated>1559659303245</updated>
+      <workItem from="1559659309728" duration="31000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="679000" />
+    <option name="totallyTimeSpent" value="31000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-255" y="264" width="1272" height="692" extended-state="0" />
+    <frame x="-4" y="0" width="1928" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38172922" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16221985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -194,22 +221,19 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/video_creation.py">
+    <entry file="file://$PROJECT_DIR$/Denoising_OF/denoising.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state>
           <folding>
-            <element signature="e#1#32#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_creations.py">
+    <entry file="file://$PROJECT_DIR$/Denoising_OF/opticalflow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#1#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="147">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
